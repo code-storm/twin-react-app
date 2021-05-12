@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/twin-react-app/static/css/main.3f9ef032.chunk.css",
-    "main.js": "/twin-react-app/static/js/main.8ed4fac7.chunk.js",
-    "main.js.map": "/twin-react-app/static/js/main.8ed4fac7.chunk.js.map",
+    "main.js": "/twin-react-app/static/js/main.32fb1b20.chunk.js",
+    "main.js.map": "/twin-react-app/static/js/main.32fb1b20.chunk.js.map",
     "runtime-main.js": "/twin-react-app/static/js/runtime-main.b19a1a62.js",
     "runtime-main.js.map": "/twin-react-app/static/js/runtime-main.b19a1a62.js.map",
     "static/js/2.375fe19f.chunk.js": "/twin-react-app/static/js/2.375fe19f.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b19a1a62.js",
     "static/js/2.375fe19f.chunk.js",
     "static/css/main.3f9ef032.chunk.css",
-    "static/js/main.8ed4fac7.chunk.js"
+    "static/js/main.32fb1b20.chunk.js"
   ]
 }
