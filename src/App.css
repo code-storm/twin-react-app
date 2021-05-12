@@ -1,0 +1,15 @@
+div.App {
+    box-sizing: border-box;
+    padding: 20px;  
+}
+
+div button {
+    padding: 10px;
+    margin: 50px;
+    background: #111;
+    color: aliceblue;
+    box-shadow: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
