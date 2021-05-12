@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Timer from './Timer';
 
 export default function () {
   const [durationDD, setDurationDD] = useState([
@@ -11,9 +12,9 @@ export default function () {
 
   const [from, setFrom] = useState('');
   const [to, setTo] = useState('');
+  const [showTimer, setShowTimer] = useState(false);
 
   const selectHandler = (ev) => {
-    console.log(ev.target, ev.target.value);
     setCurrentDuration(ev.target.value);
   };
 
@@ -35,7 +36,7 @@ export default function () {
 
     fetch('https://twin-node-server.herokuapp.com/connect', requestOptions)
       .then((response) => response.json())
-      .then((result) => console.log(result))
+      .then((result) => {console.log(result); setShowTimer(true);})
       .catch((error) => console.log('error', error));
   };
 
@@ -46,6 +47,10 @@ export default function () {
       setTo(e.target.value);
     }
   };
+
+  function hideTimer() {
+    setShowTimer(false);
+  }
 
   const renderDurationOptions = () => {
     return (
@@ -64,6 +69,9 @@ export default function () {
   return (
     <div>
       <h1>Hello World</h1>
+      <div style="padding: 10px;">
+        {showTimer && <h3><Timer duration={currentDuration} hideTimer={hideTimer}/></h3>}
+      </div>
       {renderDurationOptions()}
       <input
         type="text"
@@ -75,7 +83,7 @@ export default function () {
         onChange={onChangeTo.bind(this, 'to')}
         placeholder="Calling to: "
       />
-      <button type="button" onClick={onMakeCall}>
+      <button type="button" disabled={showTimer} onClick={onMakeCall}>
         {'Call ' + to}
       </button>
     </div>
