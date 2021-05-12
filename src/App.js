@@ -69,7 +69,7 @@ export default function () {
   return (
     <div>
       <h1>Hello World</h1>
-      <div style="padding: 10px;">
+      <div style={{padding: "10px;"}}>
         {showTimer && <h3><Timer duration={currentDuration} hideTimer={hideTimer}/></h3>}
       </div>
       {renderDurationOptions()}
