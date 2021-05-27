@@ -1,7 +1,11 @@
 # Twin react app
 
 A mini-project to call any MobileA with MobileB
-Simple, enter the receiver number and caller number in the textfield to get the automated call for the specified the duration.
+
+Simply, enter the receiver number and caller number in the textfield to get the automated call for the specified the duration.
+
+Here is the link to the node server application
+https://github.com/code-storm/plivo-outbound
 
 ## Installation
 
