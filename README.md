@@ -24,7 +24,6 @@ npm start
 ```
 
 ## Steps
-![](./button.png) 
 
 Run `npm start` to open app in the browser.
 
